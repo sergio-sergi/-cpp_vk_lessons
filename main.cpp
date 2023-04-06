@@ -19,8 +19,8 @@ uint64_t sum(std::vector<std::vector<uint32_t>> &inp, bool horiz = true) {
     uint64_t res{};
     if (horiz) {
         for (size_t j = 0; j < inp[0].size(); ++j) {
-            for (size_t i = 0; i < inp.size(); ++i) {
-                res += inp[i][j];
+            for (auto &i: inp) {
+                res += i[j];
             }
         }
     } else {
