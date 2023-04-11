@@ -66,17 +66,6 @@ TEST_CASE("Array access") {
         std::iota(row.begin(), row.end(), first);
         first += row.size();
     }
-//    auto s = sum(N, a);
-//    REQUIRE(s == sum(N, a, false));
-//    printf("summ is %llu\n", s);
-//    // now let's benchmark:
-//    BENCHMARK("Sum array vertical") {
-//                                  return sum(N, a, false);
-//                              };
-//
-//    BENCHMARK("Sum array horizontal") {
-//                                    return sum(N, a, true);
-//                                };
     auto s = sum(vec);
     printf("%llu", s);
     REQUIRE(s == sum(vec, false));

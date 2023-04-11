@@ -7,6 +7,6 @@ find_package(Catch2 3 REQUIRED)
 
 
 add_executable(${PROJECT_NAME}
-        main.cpp memory_structure.cpp)
+        main.cpp memory_structure.cpp thread_test.cpp conversion_constructors.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Catch2::Catch2WithMain)
